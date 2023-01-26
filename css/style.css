@@ -25,10 +25,10 @@ body {
 
 button {
     border: none;
-    background-color: inherit;
     color: white;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
+    background-color: inherit;
 }
 
 button:hover {
@@ -96,6 +96,10 @@ MAIN
     bottom: 2px;
     background-color: rgba(128, 128, 128, 0.5);
     padding: 4px;
+}
+
+.group .partecipant .name .partecipant-mic {
+    background-color: transparent;
 }
 
 .group .partecipant .name .partecipant-mic:active {

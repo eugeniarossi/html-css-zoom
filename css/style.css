@@ -93,6 +93,7 @@ footer .settings {
 footer .settings, 
 footer .tools {
     gap: 17px;
+    list-style-type: none;
 }
 
 footer .settings > *,

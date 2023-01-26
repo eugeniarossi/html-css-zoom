@@ -13,7 +13,7 @@ COMMON
 body {
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     color: white;
 }
@@ -44,7 +44,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    background-color: black;
+    z-index: 10;
 }
 
 header .view {
@@ -103,7 +104,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 10;
 
     justify-content: space-between;
 }

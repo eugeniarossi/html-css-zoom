@@ -17,11 +17,49 @@ body {
 /*************
 HEADER
 *************/
+header {
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 /*************
 MAIN
 *************/
+main {
+    background-color: black;
+}
+
+.container {
+    width: 90vw;
+    height: calc(100vh - 120px);
+    background-color: violet;
+    margin: 50px auto 0;
+    padding: 10px 0 20px;
+
+    display: flex;
+    gap: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.container .user {
+    background-color: aqua;
+    width: 185px;
+    height: 110px;
+    margin: 0 auto;
+}
 
 /*************
 FOOTER
 *************/
+footer {
+    height: 70px;
+    background-color: #222222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

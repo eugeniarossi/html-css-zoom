@@ -36,7 +36,7 @@ button:hover {
 }
 
 button:hover:not(main button) {
-    box-shadow: 0px 0px 14px 3px rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.3);
 }
 
 /*************
@@ -70,7 +70,7 @@ MAIN
 *************/
 .group {
     width: 90vw;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 130px);
     margin: 50px auto 80px;
     padding-bottom: 10px;
 
@@ -132,7 +132,7 @@ footer .settings {
 
 footer .settings, 
 footer .tools {
-    gap: 17px;
+    gap: 6px;
     list-style-type: none;
 }
 
@@ -153,7 +153,7 @@ footer i:not(.angle i) {
     font-size: 22px;
 }
 
-footer .share-screen > i {
+footer .share-screen i {
     color: #4bc800;
 }
 
@@ -177,3 +177,25 @@ footer button {
 footer .end-meeting button {
     padding: 0px;
 } 
+
+/* ===== SCROLLBAR ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #0d0d0d #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0d0d0d;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }

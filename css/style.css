@@ -35,6 +35,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:hover:not(main button) {
+    box-shadow: 0px 0px 14px 3px rgba(255,255,255,0.6);
+}
+
 /*************
 HEADER
 *************/
@@ -93,6 +97,10 @@ MAIN
     background-color: rgba(128, 128, 128, 0.5);
     padding: 4px;
 }
+
+.group .partecipant .name .partecipant-mic:active {
+    display: none;
+} 
 
 /*************
 FOOTER
@@ -157,3 +165,11 @@ footer .end-meeting span {
     display: inline-block;
 }
 
+footer button {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+footer .end-meeting button {
+    padding: 0px;
+} 

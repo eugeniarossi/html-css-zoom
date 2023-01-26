@@ -11,8 +11,10 @@ RESET
 COMMON
 *************/
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .row {
@@ -47,11 +49,11 @@ MAIN
 }
 
 .group .partecipant {
-    background-image: url('https://picsum.photos/185/110');
+    background-image: url('https://picsum.photos/190/110');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 185px;
+    width: 190px;
     height: 110px;
 }
 
@@ -75,6 +77,43 @@ footer .end-meeting {
     width: 20%;
 }
 
+footer .settings {
+    padding-left: 10px;
+}
+
+footer .settings, 
+footer .tools {
+    gap: 17px;
+}
+
+footer .settings > *,
+footer .tools > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .tools {
+    justify-content: center;
+}
+
 footer .end-meeting {
     justify-content: flex-end;
+    color: red;
+}
+
+footer .end-meeting span {
+    background-color: #4a4a4a;
+    padding: 0 15px;
+    line-height: 60px
+}
+
+footer i:not(.angle > i) {
+    font-size: 22px;
+}
+
+footer .share-screen > i {
+    color: #4bc800;
 }

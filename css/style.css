@@ -12,6 +12,12 @@ COMMON
 *************/
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    align-items: center;
 }
 
 /*************
@@ -19,7 +25,6 @@ HEADER
 *************/
 header {
     height: 50px;
-    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,37 +34,46 @@ header {
 /*************
 MAIN
 *************/
-main {
-    background-color: black;
-}
+.group {
+    width: 92vw;
+    height: calc(100vh - 110px);
+    margin: 50px auto 80px;
+    padding: 10px 0 30px;
 
-.container {
-    width: 90vw;
-    height: calc(100vh - 120px);
-    background-color: violet;
-    margin: 50px auto 0;
-    padding: 10px 0 20px;
-
-    display: flex;
     gap: 10px 5px;
     flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
 }
 
-.container .user {
-    background-color: aqua;
-    width: 185px;
-    height: 110px;
-    margin: 0 auto;
+.group .partecipant {
+    background-image: url('https://picsum.photos/185/110');
+    background-position: center;
+    background-size: cover;
+    width: 190px;
+    height: 115px;
 }
 
 /*************
 FOOTER
 *************/
 footer {
-    height: 70px;
+    height: 60px;
     background-color: #222222;
+    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+
+    justify-content: space-between;
+}
+
+footer .settings,
+footer .end-meeting {
+    width: 20%;
+}
+
+footer .end-meeting {
+    justify-content: flex-end;
 }
